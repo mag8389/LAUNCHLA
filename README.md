@@ -38,3 +38,5 @@ Assigned dashboards (stable workspace IDs):
 - team-15: Sandra CH
 
 Within a project, use **Add a Resource** or **Add a Reference Type** above the resource list. These open the same forms as Settings; the current project is preselected for new resources.
+
+Saved reference types appear immediately as project sections with a zero count when unused, including types created before this update. Open a resource’s **···** options to change its reference type or select **No reference type**. Removed types send the resource to **Documents & reference**; no resource or original document is deleted. These edits persist in the current workspace and exported backups, including team template workspaces.
