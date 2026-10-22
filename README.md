@@ -46,3 +46,9 @@ Use **Manage Reference Types** inside a project, or **Settings → Manage refere
 Use **Manage Projects** on the home page, inside a project, or in Settings to edit project names, descriptions, and colors, or delete a project. Shared resources stay in their other projects. Resources assigned only to a deleted project are hidden; **Restore** brings the project and its resource assignments back. These changes persist in the current workspace and backups. Projects retain stable IDs when renamed.
 
 Personal cross-browser pin syncing is planned with Google sign-in; it is not connected yet. See [the Firebase setup requirements](docs/personal-pin-sync.md) for the project configuration needed to continue.
+
+## Favorites
+
+The home page has separate Favorites and Projects sections. Previous pins appear automatically as Favorites. Use a resource’s star in a project or search results to add or remove it from Favorites. **View all Favorites** opens a full list with project context and the same resource options. Removing a Favorite keeps its project resource, notes, and link.
+
+**Add Favorite** creates one resource, requires at least one project, and automatically adds it to Favorites and the selected projects. If its URL already exists, the existing resource is favorited without duplication or changes to its project assignments. **Choose from Projects** lets you star existing resources. Favorites use existing backup data and remain browser-local until online sync is connected.
