@@ -1,0 +1,11 @@
+{
+  "name": "innova-dash-validation",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/private-database.test.mjs",
+    "test:browser": "python tests/private-auth-browser.py"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.11"
+  }
+}
