@@ -52,3 +52,7 @@ Personal cross-browser pin syncing is planned with Google sign-in; it is not con
 The home page has separate Favorites and Projects sections. Previous pins appear automatically as Favorites. Use a resource’s star in a project or search results to add or remove it from Favorites. **View all Favorites** opens a full list with project context and the same resource options. Removing a Favorite keeps its project resource, notes, and link.
 
 **Add Favorite** creates one resource, requires at least one project, and automatically adds it to Favorites and the selected projects. If its URL already exists, the existing resource is favorited without duplication or changes to its project assignments. **Choose from Projects** lets you star existing resources. Favorites use existing backup data and remain browser-local until online sync is connected.
+
+## LAUNCH LA School Bundle Planner
+
+A separate app now handles school-submitted orders and their Column P approved quantities, grouped for direct EdTech-to-school fulfillment. Open [the import-based planner](LAUNCHLA-School-Bundle-Planner.html), or follow [the new Apps Script deployment instructions](apps-script/launchla-school-orders/README.md) for live workbook reads. The existing department planner is unchanged. Live deployment and stock formula reconciliation remain required before relying on stock for fulfillment.
