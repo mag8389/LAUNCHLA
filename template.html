@@ -68,7 +68,8 @@ const defaultTypes=['Reference','Inventory','Devices','Web app','Folder','Deploy
 const isTemplate=document.body.dataset.template==='true';
 const requestedWorkspace=new URLSearchParams(location.search).get('workspace')||'';
 const workspace=/^[a-z0-9][a-z0-9-]{0,63}$/.test(requestedWorkspace)?requestedWorkspace:'';
-const workspaceLabel=workspace?workspace.split('-').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' '):'';
+const teamNames={'team-1':'Renee Sanchez','team-2':'Dominic Caguioa','team-3':'Elizabeth Lester','team-4':'Maria Franco'};
+const workspaceLabel=workspace?(teamNames[workspace]||workspace.split('-').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')):'';
 const storageKey=workspace?'innova-dash-workspace-'+workspace:(isTemplate?'innova-dash-template-v1':'workroom-v1');
 if(workspace){document.title=workspaceLabel+' · INNOVA-DASH';$('#home span').textContent=workspaceLabel+' dashboard';}
 

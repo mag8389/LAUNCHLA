@@ -18,3 +18,5 @@ Open `team.html` for the team directory. Each teammate bookmarks their assigned 
 Names can be changed in the directory without changing workspace IDs. Keep each assigned `workspace` ID stable: changing it opens a different browser workspace. IDs accept lowercase letters, digits, and hyphens (1–64 characters). Other valid IDs also support additional dashboards.
 
 GitHub Pages hosts the application files, not user data. Separate links are not authentication or privacy boundaries. Anyone using the same browser profile can access that profile's workspaces. Changes stay in local storage, do not sync across devices, and are not committed to GitHub. Export backups regularly; use import to move data. Do not treat the team directory as an access-control mechanism.
+
+Assigned dashboards: team-1 — Renee Sanchez; team-2 — Dominic Caguioa; team-3 — Elizabeth Lester; team-4 — Maria Franco. Team member 5 remains unassigned. These labels do not change the workspace storage IDs.
