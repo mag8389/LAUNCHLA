@@ -40,3 +40,5 @@ Assigned dashboards (stable workspace IDs):
 Within a project, use **Add a Resource** or **Add a Reference Type** above the resource list. These open the same forms as Settings; the current project is preselected for new resources.
 
 Saved reference types appear immediately as project sections with a zero count when unused, including types created before this update. Open a resource’s **···** options to change its reference type or select **No reference type**. Removed types send the resource to **Documents & reference**; no resource or original document is deleted. These edits persist in the current workspace and exported backups, including team template workspaces.
+
+Use **Manage Reference Types** inside a project, or **Settings → Manage reference types**, to delete an unused or in-use type. Confirmation shows the affected resource count. Resources are kept with no reference type under Documents & reference; links, pins, and notes are retained. Deleted default types stay hidden after reload and backup import. You can recreate a deleted type with Add a Reference Type; existing resources remain unassigned.
