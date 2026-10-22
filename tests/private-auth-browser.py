@@ -28,6 +28,7 @@ def run():
     browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
     # Unconfigured production defaults fail closed without loading any private data.
     page=browser.new_page()
+    page.route('**/auth-config.js',lambda r:r.fulfill(content_type='text/javascript',body='window.INNOVA_AUTH_CONFIG={supabaseUrl:"",publishableKey:""};'))
     page.goto(BASE+'private.html')
     assert page.locator('#send-link').is_disabled()
     assert 'not connected yet' in page.locator('#signin-message').inner_text()

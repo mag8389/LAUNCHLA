@@ -40,8 +40,8 @@ Assigned dashboards (stable workspace IDs):
 Within a project, use **Add a Resource** or **Add a Reference Type** above the resource list. These open the same forms as Settings; the current project is preselected for new resources.
 
 
-## Private email-link sign-in (prepared, not connected)
+## Private email-link sign-in (backend setup pending)
 
-`private.html` adds email-link sign-in and cloud-backed per-user dashboards. The existing dashboards are unchanged. Supabase project configuration, approved email addresses, account provisioning, production email delivery and live access testing remain required; this is not yet an active private service. Follow [supabase/SETUP.md](supabase/SETUP.md). Each approved teammate will use the same sign-in URL; database authorization uses their verified account ID, not a numbered URL. Export existing local dashboards before importing them after sign-in.
+`private.html` adds email-link sign-in and cloud-backed per-user dashboards. The existing dashboards are unchanged. The Supabase public project connection is configured. Database setup, approved email addresses, account provisioning, sign-in redirects, production email delivery and live access testing remain required; this is not yet an active private service. Follow [supabase/SETUP.md](supabase/SETUP.md). Each approved teammate will use the same sign-in URL; database authorization uses their verified account ID, not a numbered URL. Export existing local dashboards before importing them after sign-in.
 
 The public app configuration contains only a project URL and publishable/anon key. Never commit a service-role key, SMTP password, approved-email list or dashboard backup. Database permissions, not hidden links, enforce privacy. `npm test` checks actual PostgreSQL authorization; `npm run test:browser` exercises the auth/cloud UI using simulated service responses. Production is static and does not need npm or a build.

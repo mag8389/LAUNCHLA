@@ -1,6 +1,6 @@
 # Connect private email-link dashboards
 
-Status: application and database changes are prepared. Supabase is not configured in this repository. `private.html` fails closed until public configuration is supplied; existing local dashboards remain available. No live sign-in or cloud deployment has been validated.
+Status: application and database changes are prepared. The project URL and public publishable key are configured in `auth-config.js`. Database setup, approved membership, account provisioning, redirects and email delivery still require configuration in Supabase; existing local dashboards remain available. No live sign-in or cloud deployment has been validated.
 
 ## 1. Create the service
 
