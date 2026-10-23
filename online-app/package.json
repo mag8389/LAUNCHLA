@@ -1,0 +1,11 @@
+{
+  "name": "innova-dash-online",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "check": "node --check worker/index.mjs && python3 tests/check.py"
+  },
+  "dependencies": { "jose": "^6.0.0" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}
